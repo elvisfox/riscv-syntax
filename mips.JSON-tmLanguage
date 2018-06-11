@@ -9,16 +9,16 @@
     },
     {
         "name": "entity.name.section.riscv",
-        "match": "\\.\\b(data|text|kdata|ktext|)\\b",
+        "match": "\\b\\.(data|text|kdata|ktext|)\\b",
         "comment": "Segements: .data .text"
     },
     {
         "name": "variable.parameter.riscv",
-        "match": "\\$(((3[01])|([12]?[0-9])|[0-9])|zero|at|v[01]|a[0-3]|s[0-7]|t[0-9]|k[01]|gp|sp|fp|ra)",
-        "comment": "Registers by id $1, $2, ..."
+        "match": "\\b(x((3[01])|([12]?[0-9])|[0-9])\\b|zero|a[0-7]|s([1]?[01]|[0-9])|t[0-6]|gp|sp|fp|tp|ra|pc)\\b",
+        "comment": "Registers by id x1, x2, ..."
     },
     {
-        "match": "\\$f([0-9]|[1-2][0-9]|3[0-1])",
+        "match": "\\bf(t([0-9]|[1][01])|a[0-7]|s([0-9]|[1][01]))\\b",
         "name": "variable.parameter.riscv",
         "comment": "Floating point registers"
     },

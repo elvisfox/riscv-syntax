@@ -23,15 +23,15 @@
 			<key>comment</key>
 			<string>Segements: .data .text</string>
 			<key>match</key>
-			<string>\.\b(data|text|kdata|ktext|)\b</string>
+			<string>\b\.(data|text|kdata|ktext|)\b</string>
 			<key>name</key>
 			<string>entity.name.section.riscv</string>
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Registers by id $1, $2, ...</string>
+			<string>Registers by id x1, x2, ...</string>
 			<key>match</key>
-			<string>\$(((3[01])|([12]?[0-9])|[0-9])|zero|at|v[01]|a[0-3]|s[0-7]|t[0-9]|k[01]|gp|sp|fp|ra)</string>
+			<string>\b(x((3[01])|([12]?[0-9])|[0-9])\b|zero|a[0-7]|s([1]?[01]|[0-9])|t[0-6]|gp|sp|fp|tp|ra|pc)\b</string>
 			<key>name</key>
 			<string>variable.parameter.riscv</string>
 		</dict>
@@ -39,7 +39,7 @@
 			<key>comment</key>
 			<string>Floating point registers</string>
 			<key>match</key>
-			<string>\$f([0-9]|[1-2][0-9]|3[0-1])</string>
+			<string>\bf(t([0-9]|[1][01])|a[0-7]|s([0-9]|[1][01]))\b</string>
 			<key>name</key>
 			<string>variable.parameter.riscv</string>
 		</dict>
