@@ -1,0 +1,6 @@
+<snippet>
+    <description>rd = PC + 4; PC = PC+4[31:28] . C*4</description>
+    <content><![CDATA[jalr ${2:rd}, ${2:Label}]]></content>
+    <tabTrigger>jump_and_link_register</tabTrigger>
+    <scope>source.riscv</scope>
+</snippet>

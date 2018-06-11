@@ -1,7 +1,6 @@
-<!-- THIS WAS AUTOMATED GENERATED -->
 <snippet>
-    <description>$t = Memory[$s + C] (unsigned)</description>
-    <content><![CDATA[lhu \$${1:t}, ${2:N}(\$${3:s})]]></content>
+    <description>rt = Memory[rs + C] (unsigned)</description>
+    <content><![CDATA[lhu ${1:rt}, ${2:N}(${3:rs})]]></content>
     <tabTrigger>load_halfword_unsigned</tabTrigger>
-    <scope>source.mips</scope>
+    <scope>source.riscv</scope>
 </snippet>

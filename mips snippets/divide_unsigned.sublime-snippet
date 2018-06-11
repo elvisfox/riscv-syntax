@@ -1,0 +1,6 @@
+<snippet>
+    <description>rd = rs / rt</description>
+    <content><![CDATA[divu ${1:rd}, ${2:rs}, ${3:rt}]]></content>
+    <tabTrigger>divide_unsigned</tabTrigger>
+    <scope>source.riscv</scope>
+</snippet>

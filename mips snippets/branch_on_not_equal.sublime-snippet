@@ -1,7 +1,6 @@
-<!-- THIS WAS AUTOMATED GENERATED -->
 <snippet>
-    <description>if ($s != $t) go to PC+4+4*C</description>
-    <content><![CDATA[bne \$${1:s}, \$${2:t}, ${3:Label}]]></content>
+    <description>if (rs != rt) go to PC+4+4*C</description>
+    <content><![CDATA[bne ${1:rs}, ${2:rt}, ${3:Label}]]></content>
     <tabTrigger>branch_on_not_equal</tabTrigger>
-    <scope>source.mips</scope>
+    <scope>source.riscv</scope>
 </snippet>

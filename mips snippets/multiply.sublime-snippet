@@ -1,0 +1,6 @@
+<snippet>
+    <description>rd=((rs * rt)&lt;&lt;32)&gt;&gt;32;</description>
+    <content><![CDATA[mul ${1:rd}, ${2:rs}, ${3:rt}]]></content>
+    <tabTrigger>multiply</tabTrigger>
+    <scope>source.riscv</scope>
+</snippet>

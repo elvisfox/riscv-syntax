@@ -1,7 +1,6 @@
-<!-- THIS WAS AUTOMATED GENERATED -->
 <snippet>
-    <description>Memory[$s + C] = $t</description>
-    <content><![CDATA[sb \$${1:t}, ${2:N}(\$${3:s})]]></content>
+    <description>Memory[rs + C] = rt</description>
+    <content><![CDATA[sb ${1:rt}, ${2:N}(${3:rs})]]></content>
     <tabTrigger>store_byte</tabTrigger>
-    <scope>source.mips</scope>
+    <scope>source.riscv</scope>
 </snippet>

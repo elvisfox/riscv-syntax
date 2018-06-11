@@ -1,7 +1,6 @@
-<!-- THIS WAS AUTOMATED GENERATED -->
 <snippet>
-    <description>$d = $t &gt;&gt; $s</description>
-    <content><![CDATA[srlv \$${1:d}, \$${2:t}, \$${3:s}]]></content>
+    <description>rd = rt &gt;&gt; rs</description>
+    <content><![CDATA[srlv ${1:rd}, ${2:rt}, ${3:rs}]]></content>
     <tabTrigger>shift_right_logical</tabTrigger>
-    <scope>source.mips</scope>
+    <scope>source.riscv</scope>
 </snippet>

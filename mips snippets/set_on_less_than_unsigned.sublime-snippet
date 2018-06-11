@@ -1,7 +1,6 @@
-<!-- THIS WAS AUTOMATED GENERATED -->
 <snippet>
-    <description>$d = ($s &lt; $t)</description>
-    <content><![CDATA[sltu \$${1:d}, \$${2:s}, \$${3:t}]]></content>
+    <description>rd = (rs &lt; rt)</description>
+    <content><![CDATA[sltu ${1:rd}, ${2:rs}, ${3:rt}]]></content>
     <tabTrigger>set_on_less_than_unsigned</tabTrigger>
-    <scope>source.mips</scope>
+    <scope>source.riscv</scope>
 </snippet>

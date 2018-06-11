@@ -8,16 +8,16 @@
 		<string>asm</string>
 	</array>
 	<key>name</key>
-	<string>MIPS</string>
+	<string>RISC-V</string>
 	<key>patterns</key>
 	<array>
 		<dict>
 			<key>comment</key>
 			<string>Assembler directives for data storage</string>
 			<key>match</key>
-			<string>\.\b(align|ascii|asciiz|byte|double|extern|float|globl|space|word)\b</string>
+			<string>\.\b(align|ascii|asciiz|byte|double|extern|float|globl|space|word|eqv|half|)\b</string>
 			<key>name</key>
-			<string>storage.modifier.mips</string>
+			<string>storage.modifier.riscv</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -25,7 +25,7 @@
 			<key>match</key>
 			<string>\.\b(data|text|kdata|ktext|)\b</string>
 			<key>name</key>
-			<string>entity.name.section.mips</string>
+			<string>entity.name.section.riscv</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -33,7 +33,7 @@
 			<key>match</key>
 			<string>\$(((3[01])|([12]?[0-9])|[0-9])|zero|at|v[01]|a[0-3]|s[0-7]|t[0-9]|k[01]|gp|sp|fp|ra)</string>
 			<key>name</key>
-			<string>variable.parameter.mips</string>
+			<string>variable.parameter.riscv</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -41,39 +41,39 @@
 			<key>match</key>
 			<string>\$f([0-9]|[1-2][0-9]|3[0-1])</string>
 			<key>name</key>
-			<string>variable.parameter.mips</string>
+			<string>variable.parameter.riscv</string>
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>The MIPS floating-point instruction set</string>
+			<string>The RISC-V floating-point instruction set</string>
 			<key>match</key>
-			<string>\b((add|sub|div|l|mov|mult|neg|s|c\.eq|c\.le|c\.lt)\.[ds]|cvt\.s\.[dw]|cvt\.d\.[sw]|cvt\.w\.[ds]|bc1[tf])\b</string>
+			<string>\b((add|sub|div|divu|l|mov|mul|mulh|mulhu|mulhsu|neg|s|c\.eq|c\.le|c\.lt)\.[ds]|cvt\.s\.[dw]|cvt\.d\.[sw]|cvt\.w\.[ds]|bc1[tf])\b</string>
 			<key>name</key>
-			<string>support.function.source.mips</string>
+			<string>support.function.source.riscv</string>
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Just the hardcoded instructions provided by the MIPS assembly language</string>
+			<string>Just the hardcoded instructions provided by the RISC-V assembly language</string>
 			<key>match</key>
 			<string>\b(add|addu|addi|addiu|sub|subu|and|andi|or|not|ori|nor|xor|xori|slt|sltu|slti|sltiu|sll|sllv|rol|srl|sra|srlv|ror|j|jr|jal|beq|bne|lw|sw|lui|move|mfhi|mflo|mthi|mtlo)\b</string>
 			<key>name</key>
-			<string>support.function.source.mips</string>
+			<string>support.function.source.riscv</string>
 		</dict>
 		<dict>
 			<key>comment</key>
 			<string>Pseudo instructions</string>
 			<key>match</key>
-			<string>\b(abs|b|beqz|bge|bgt|bgtu|ble|bleu|blt|bltu|bnez|div|divu|la|li|move|mul|neg|not|rem|remu|seq|sge|sgt|sle|sne)\b</string>
+			<string>\b(abs|b|beqz|bge|bgt|bgtu|ble|bleu|blt|bltu|bnez|div|divu|la|li|mv|mul|neg|not|rem|remu|seq|sge|sgt|sle|sne)\b</string>
 			<key>name</key>
-			<string>support.function.other.mips</string>
+			<string>support.function.other.riscv</string>
 		</dict>
 		<dict>
 			<key>comment</key>
 			<string>Other</string>
 			<key>match</key>
-			<string>\b(syscall)\b</string>
+			<string>\b(ecall)\b</string>
 			<key>name</key>
-			<string>entity.name.function.mips</string>
+			<string>entity.name.function.riscv</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -83,7 +83,7 @@
 			<key>end</key>
 			<string>"</string>
 			<key>name</key>
-			<string>string.quoted.double.mips</string>
+			<string>string.quoted.double.riscv</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -100,7 +100,7 @@
 			<key>match</key>
 			<string>\b((0(x|X)[0-9A-Fa-f]*)|((\-)?[0-9]*))\b</string>
 			<key>name</key>
-			<string>constant.numeric.mips</string>
+			<string>constant.numeric.riscv</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -108,7 +108,7 @@
 			<key>match</key>
 			<string>\b[\w]+\b:</string>
 			<key>name</key>
-			<string>entity.name.tag.mips</string>
+			<string>entity.name.tag.riscv</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -116,11 +116,11 @@
 			<key>match</key>
 			<string>#.*$</string>
 			<key>name</key>
-			<string>comment.line.number-sign.mips</string>
+			<string>comment.line.number-sign.riscv</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>source.mips</string>
+	<string>source.riscv</string>
 	<key>uuid</key>
 	<string>f43b595a-700b-4f4f-a525-9c78c44d0254</string>
 </dict>

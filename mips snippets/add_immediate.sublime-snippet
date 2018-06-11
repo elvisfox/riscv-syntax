@@ -1,7 +1,6 @@
-<!-- THIS WAS AUTOMATED GENERATED -->
 <snippet>
-    <description>$t = $s + C (signed)</description>
-    <content><![CDATA[addi \$${1:t}, \$${2:s}, ${3:Label}]]></content>
+    <description>rt = rs + C (signed)</description>
+    <content><![CDATA[addi ${1:rt}, ${2:rs}, ${3:Label}]]></content>
     <tabTrigger>add_immediate</tabTrigger>
-    <scope>source.mips</scope>
+    <scope>source.riscv</scope>
 </snippet>

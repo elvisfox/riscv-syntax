@@ -1,7 +1,6 @@
-<!-- THIS WAS AUTOMATED GENERATED -->
 <snippet>
-    <description>$d = $t &lt;&lt; shamt</description>
-    <content><![CDATA[sll \$${1:d}, \$${2:t}, ${3:shamt}]]></content>
+    <description>rd = rt &lt;&lt; shamt</description>
+    <content><![CDATA[sll ${1:rd}, ${2:rt}, ${3:shamt}]]></content>
     <tabTrigger>shift_left_logical_immediate</tabTrigger>
-    <scope>source.mips</scope>
+    <scope>source.riscv</scope>
 </snippet>

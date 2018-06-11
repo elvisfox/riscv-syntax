@@ -1,7 +1,6 @@
-<!-- THIS WAS AUTOMATED GENERATED -->
 <snippet>
-    <description>shifts $s number of bits</description>
-    <content><![CDATA[srav \$${1:d}, \$${2:t}, \$${3:s}]]></content>
+    <description>shifts rs number of bits</description>
+    <content><![CDATA[srav ${1:rd}, ${2:rt}, ${3:rs}]]></content>
     <tabTrigger>shift_right_arithmetic</tabTrigger>
-    <scope>source.mips</scope>
+    <scope>source.riscv</scope>
 </snippet>

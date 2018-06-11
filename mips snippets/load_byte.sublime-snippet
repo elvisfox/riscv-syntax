@@ -1,7 +1,6 @@
-<!-- THIS WAS AUTOMATED GENERATED -->
 <snippet>
-    <description>$t = Memory[$s + C] (signed)</description>
-    <content><![CDATA[lb \$${1:t}, ${2:N}(\$${3:s})]]></content>
+    <description>rt = Memory[rs + C] (signed)</description>
+    <content><![CDATA[lb ${1:rt}, ${2:N}(${3:rs})]]></content>
     <tabTrigger>load_byte</tabTrigger>
-    <scope>source.mips</scope>
+    <scope>source.riscv</scope>
 </snippet>
