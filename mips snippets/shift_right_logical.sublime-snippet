@@ -1,6 +1,6 @@
 <snippet>
     <description>rd = rt &gt;&gt; rs</description>
-    <content><![CDATA[srlv ${1:rd}, ${2:rt}, ${3:rs}]]></content>
+    <content><![CDATA[srl ${1:rd}, ${2:rt}, ${3:rs}]]></content>
     <tabTrigger>shift_right_logical</tabTrigger>
     <scope>source.riscv</scope>
 </snippet>

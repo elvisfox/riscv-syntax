@@ -29,7 +29,7 @@
     },
     {
         "name": "support.function.source.riscv",
-        "match": "\\b(add|addu|addi|addiu|sub|subu|and|andi|or|not|ori|nor|xor|xori|slt|sltu|slti|sltiu|sll|sllv|rol|srl|sra|srlv|ror|j|jr|jal|jalr|beq|bne|lw|sw|lb|sb|lh|sh|lui|move|mfhi|mflo|mthi|mtlo)\\b",
+        "match": "\\b(add|addu|addi|addiu|sub|subu|and|andi|or|not|ori|nor|xor|xori|slt|sltu|slti|sltiu|slli|sll|rol|srli|sra|srl|ror|j|jr|jal|jalr|beq|bne|lw|sw|lb|sb|lh|sh|lui|move|mfhi|mflo|mthi|mtlo)\\b",
         "comment": "Just the hardcoded instructions provided by the RISC-V assembly language"
     },
     {
