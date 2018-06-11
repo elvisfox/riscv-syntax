@@ -10,8 +10,8 @@
 			"platforms": {
 				"*": [
 					{
-						"version": "0.1.0",
-						"url": "https://nodeload.github.com/contradictioned/mjjjjips-syntax/zip/0.1"
+						"version": "0.1",
+						"url": "https://nodeload.github.com/Andreymazepas/riscv-syntax/zip/0.1"
 					}
 				]
 			}
