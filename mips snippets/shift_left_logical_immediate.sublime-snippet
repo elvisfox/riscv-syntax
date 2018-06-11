@@ -1,6 +1,6 @@
 <snippet>
     <description>rd = rt &lt;&lt; shamt</description>
-    <content><![CDATA[sll ${1:rd}, ${2:rt}, ${3:shamt}]]></content>
+    <content><![CDATA[slli ${1:rd}, ${2:rt}, ${3:shamt}]]></content>
     <tabTrigger>shift_left_logical_immediate</tabTrigger>
     <scope>source.riscv</scope>
 </snippet>

@@ -33,8 +33,8 @@ exclusive_or                                          xor ${1:rd}, ${2:rs}, ${3:
 set_on_less_than                                      slt ${1:rd}, ${2:rs}, ${3:rt}                         rd = (rs &lt; rt)
 set_on_less_than_unsigned                             sltu ${1:rd}, ${2:rs}, ${3:rt}                        rd = (rs &lt; rt)
 set_on_less_than_immediate                            slti ${1:rt}, ${2:rs}, ${3:Label}                     rt = (rs &lt; C)
-shift_left_logical_immediate                          sll ${1:rd}, ${2:rt}, ${3:shamt}                      rd = rt &lt;&lt; shamt
-shift_right_logical_immediate                         srl ${1:rd}, ${2:rt}, ${3:shamt}                      rd = rt &gt;&gt; shamt
+shift_left_logical_immediate                          slli ${1:rd}, ${2:rt}, ${3:shamt}                      rd = rt &lt;&lt; shamt
+shift_right_logical_immediate                         srli ${1:rd}, ${2:rt}, ${3:shamt}                      rd = rt &gt;&gt; shamt
 shift_left_logical                                    sllv ${1:rd}, ${2:rt}, ${3:rs}                        rd = rt &lt;&lt; rs
 shift_right_logical                                   srlv ${1:rd}, ${2:rt}, ${3:rs}                        rd = rt &gt;&gt; rs
 branch_on_equal                                       beq ${1:rs}, ${2:rt}, ${3:Label}                      if (rs == rt) go to PC+4+4*C

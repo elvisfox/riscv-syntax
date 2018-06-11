@@ -55,7 +55,7 @@
 			<key>comment</key>
 			<string>Just the hardcoded instructions provided by the RISC-V assembly language</string>
 			<key>match</key>
-			<string>\b(add|addu|addi|addiu|sub|subu|and|andi|or|not|ori|nor|xor|xori|slt|sltu|slti|sltiu|sll|sllv|rol|srl|sra|srlv|ror|j|jr|jal|beq|bne|lw|sw|lui|move|mfhi|mflo|mthi|mtlo)\b</string>
+			<string>\b(add|addu|addi|addiu|sub|subu|and|andi|or|not|ori|nor|xor|xori|slt|sltu|slti|sltiu|sll|sllv|rol|srl|sra|srlv|ror|j|jr|jal|jalr|beq|bne|lw|sw|lb|sb|lh|sh|lui|move|mfhi|mflo|mthi|mtlo)\b</string>
 			<key>name</key>
 			<string>support.function.source.riscv</string>
 		</dict>
