@@ -4,14 +4,14 @@
 		{
 			"name": "RISCV-Syntax",
 			"description": "Provides RISCV-Syntax for Sublime Text 2. Currently under development. Adapted from MIPS-syntax package",
-			"author": "Andrey Mazépas (original Author: Manuel Hoffmann)",
-			"homepage": "https://github.com/andreymazepas/riscv-syntax",
-			"last_modified": "2014-01-30 11:29:24",
+			"author": "Elvis Fox (original Author: Andrey Mazépas / Manuel Hoffmann)",
+			"homepage": "https://github.com/elvisfox/riscv-syntax",
+			"last_modified": "2020-07-14 00:31:24",
 			"platforms": {
 				"*": [
 					{
-						"version": "0.1.1",
-						"url": "https://nodeload.github.com/Andreymazepas/riscv-syntax/zip/0.1"
+						"version": "0.1.2",
+						"url": "https://github.com/elvisfox/riscv-syntax"
 					}
 				]
 			}

@@ -60,9 +60,15 @@
         "comment": "Labels at line start: begin_repeat: add ..."
     },
     {
-        "name": "comment.line.number-sign.riscv",
-        "match": "#.*$",
+        "name": "comment.line.double-slash.riscv",
+        "match": "//.*$",
         "comment": "Single line comments"
+    },
+    {
+        "name": "comment.block.c-style.riscv",
+        "begin": "/\\*",
+        "end": "\\*/",
+        "comment": "Multi-line comments"
     }
   ],
   "uuid": "f43b595a-700b-4f4f-a525-9c78c44d0254"
